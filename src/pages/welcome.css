@@ -1,0 +1,114 @@
+/* Welcome Page Styles */
+.welcome-main {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f8f9fa 50%, #e9ecef 50%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcome-content {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.welcome-image {
+  flex: 1;
+  background: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  position: relative;
+}
+
+.welcome-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: #212529;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #5f3dc4;
+  font-weight: 700;
+  font-family: italic;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #495057;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+bold {
+  font-weight: 600;
+  color: #5f3dc4;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: #5f3dc4;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(95, 61, 196, 0.3);
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: #4c2fa3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(95, 61, 196, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .welcome-main {
+    flex-direction: column;
+    background: #f8f9fa;
+  }
+
+  .welcome-content {
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .welcome-image {
+    min-height: 400px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+  }
+}

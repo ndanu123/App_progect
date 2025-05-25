@@ -1,0 +1,83 @@
+/* NavBar Styles */
+.navbar {
+  background-color: #ffffff !;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #5f3dc4 ;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand:hover {
+  color: #4c2fa3 ;
+}
+
+.navbar-brand::before {
+  content: "📖";
+  margin-right: 8px;
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  color: #495057 ;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem ;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.nav-link:hover {
+  color: #5f3dc4 !important;
+  background-color: #f3f0ff;
+}
+
+.nav-link.active {
+  color: #ffffff !important;
+  background-color: #5f3dc4 !important;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 2px rgba(95, 61, 196, 0.3);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2895, 61, 196, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding: 1rem 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+  }
+
+  .nav-link {
+    margin: 0.3rem 0;
+    padding: 0.8rem 1rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    margin-left: auto;
+  }
+}

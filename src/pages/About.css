@@ -1,0 +1,114 @@
+/* About Page Styles */
+.about-main { 
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f8f9fa 50%, #ffffff 50%);
+  font-family:'Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif';
+  color: #333;
+}
+
+.about-content {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  max-width: 800px;
+}
+
+.about-image {
+  flex: 1;
+  
+  width: 100%;
+  
+  height: 100%;
+
+}
+
+ .about-image::before {
+  content:icon '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5%;
+  height: 5%;
+  background: rgba(255, 255, 255, 0.1);
+  /* backdrop-filter: blur(2px); */
+  }  
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #212529;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #5f3dc4;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #495057;
+}
+
+em {
+  font-style: italic;
+  color: #5f3dc4;
+}
+
+/* Quote styling */
+p:last-child {
+  font-style: italic;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-left: 4px solid #5f3dc4;
+  margin-top: 2rem;
+}
+
+p:last-child em {
+  display: block;
+  text-align: right;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .about-main {
+    flex-direction: column;
+    background: #f8f9fa;
+  }
+
+  .about-content {
+    padding: 2rem;
+    max-width: 100%;
+  }
+
+  .about-image {
+    min-height: 400px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  p:last-child {
+    padding: 1rem;
+  }
+}
